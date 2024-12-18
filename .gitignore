@@ -1,0 +1,15 @@
+# Executable files
+*.out
+*.o
+*.a
+*.so
+
+# Build directories
+bin/
+build/
+dist/
+target/
+
+# Debug files
+*.dSYM/
+core
