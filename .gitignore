@@ -1,3 +1,8 @@
+# Ignore all files without extension in this directory
+*
+!/**/
+!*.*
+
 # Executable files
 *.out
 *.o
