@@ -1,3 +1,85 @@
+Initial state:
+Memory Array:
+Row 0: 0 0 1 1 0 0 1 1 
+Row 1: 1 1 1 1 1 1 0 0 
+Row 2: 1 0 0 0 0 0 0 1 
+Row 3: 0 0 1 0 0 0 0 0 
+Row 4: 0 0 1 0 0 1 1 1 
+Row 5: 0 0 0 1 0 0 0 1 
+Row 6: 0 0 1 0 0 1 1 0 
+Row 7: 0 0 1 0 0 1 0 1 
+
+Row Buffer: 0 0 0 0 0 0 0 0 
+
+Reserved Rows:
+R0 (Zero): 0 0 0 0 0 0 0 0 
+R1 (One): 1 1 1 1 1 1 1 1 
+Designated Rows:
+D1: 0 0 0 0 0 0 0 0 
+D2: 0 0 0 0 0 0 0 0 
+D3: 0 0 0 0 0 0 0 0 
+
+Performing BULK AND between Row 0 and Row 1
+
+Cloning Row 0
+
+Cloning Row 1
+
+Storing result in Row 2
+
+After AND operation:
+Memory Array:
+Row 0: 0 0 1 1 0 0 1 1 
+Row 1: 1 1 1 1 1 1 0 0 
+Row 2: 0 0 1 1 0 0 0 0 
+Row 3: 0 0 1 0 0 0 0 0 
+Row 4: 0 0 1 0 0 1 1 1 
+Row 5: 0 0 0 1 0 0 0 1 
+Row 6: 0 0 1 0 0 1 1 0 
+Row 7: 0 0 1 0 0 1 0 1 
+
+Row Buffer: 1 1 1 1 1 1 0 0 
+
+Reserved Rows:
+R0 (Zero): 0 0 0 0 0 0 0 0 
+R1 (One): 1 1 1 1 1 1 1 1 
+Designated Rows:
+D1: 0 0 1 1 0 0 1 1 
+D2: 1 1 1 1 1 1 0 0 
+D3: 0 0 1 1 0 0 0 0 
+
+Performing BULK OR between Row 3 and Row 4
+
+Cloning Row 3
+
+Cloning Row 4
+
+Storing result in Row 5
+
+After OR operation:
+Memory Array:
+Row 0: 0 0 1 1 0 0 1 1 
+Row 1: 1 1 1 1 1 1 0 0 
+Row 2: 0 0 1 1 0 0 0 0 
+Row 3: 0 0 1 0 0 0 0 0 
+Row 4: 0 0 1 0 0 1 1 1 
+Row 5: 0 0 1 0 0 1 1 1 
+Row 6: 0 0 1 0 0 1 1 0 
+Row 7: 0 0 1 0 0 1 0 1 
+
+Row Buffer: 0 0 1 0 0 1 1 1 
+
+Reserved Rows:
+R0 (Zero): 0 0 0 0 0 0 0 0 
+R1 (One): 1 1 1 1 1 1 1 1 
+Designated Rows:
+D1: 0 0 1 0 0 0 0 0 
+D2: 0 0 1 0 0 1 1 1 
+D3: 0 0 1 0 0 1 1 1 
+
+
+
+
 The results demonstrate that DRAM In-Memory Bulk Bitwise Operations significantly enhance computational efficiency.
 
 By performing computations directly within memory through voltage-based sensing, the system eliminates CPU-memory data movement bottlenecks.
