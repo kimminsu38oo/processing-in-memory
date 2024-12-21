@@ -1,0 +1,7 @@
+The results demonstrate that DRAM In-Memory Bulk Bitwise Operations significantly enhance computational efficiency.
+
+By performing computations directly within memory through voltage-based sensing, the system eliminates CPU-memory data movement bottlenecks.
+
+The triple row activation with 1/2Vdd threshold enables parallel operations across entire memory rows, while reserved rows (R0, R1) provide precise voltage control for AND/OR operations.
+
+This approach achieves substantial performance gains by executing logical operations entirely within memory, significantly reducing both latency and system overhead.
